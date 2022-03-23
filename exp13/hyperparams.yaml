@@ -1,0 +1,83 @@
+# Generated 2022-03-19 from:
+# /home/qinyc/02_exp/exp13/test_code/verification.yaml
+# yamllint disable
+# ################################
+# Model: Speaker Verification Baseline
+# Authors: Hwidong Na 2020
+#          Mirco Ravanelli 2020
+# ################################
+
+seed: 1234
+__set_seed: !apply:torch.manual_seed [1234]
+
+# Folders and train_log file
+voxceleb_source: /data0/qyc/vox1_2
+data_folder: /data0/qyc/vox1_2/vox1_test
+output_folder: /home/qinyc/02_exp/exp12/
+save_folder: /home/qinyc/02_exp/exp12//save
+device: cuda:0
+
+# Use the following links for the official voxceleb splits:
+# VoxCeleb1 (cleaned): https://www.robots.ox.ac.uk/~vgg/data/voxceleb/meta/veri_test2.txt
+# VoxCeleb1-H (cleaned): https://www.robots.ox.ac.uk/~vgg/data/voxceleb/meta/list_test_hard2.txt
+# VoxCeleb1-E (cleaned): https://www.robots.ox.ac.uk/~vgg/data/voxceleb/meta/list_test_all2.txt.
+# VoxCeleb1-E and VoxCeleb1-H lists are drawn from the VoxCeleb1 training set.
+# Therefore you cannot use any files in VoxCeleb1 for training if you are using these lists for testing.
+verification_file: https://www.robots.ox.ac.uk/~vgg/data/voxceleb/meta/veri_test2.txt
+
+# Here, the pretrained embedding model trained with train_speaker_embeddings.py hparams/train_ecapa_tdnn.yaml
+# is downloaded from the speechbrain HuggingFace repository.
+# However, a local path pointing to a directory containing your checkpoints may also be specified
+# instead (see pretrainer below)
+pretrain_path: /home/qinyc/02_exp/exp04/save/CKPT+2021-08-23+08-26-47+00
+
+# csv files
+train_data: /home/qinyc/02_exp/exp12//save/train.csv
+enrol_data: /home/qinyc/02_exp/exp12//save/enrol.csv
+test_data: /home/qinyc/02_exp/exp12//save/test.csv
+
+batch_size: 32
+score_norm: s-norm   # z-norm t-norm s-norm none
+cohort_size: 2000 # amount of imposter utterances in normalization cohort
+n_train_snts: 40000 # used for normalization stats
+
+# Feature parameters
+n_mels: 80
+right_frames: 0
+deltas: false
+
+# Dataloader options
+train_dataloader_opts:
+  batch_size: 32
+
+enrol_dataloader_opts:
+  batch_size: 32
+
+test_dataloader_opts:
+  batch_size: 32
+
+compute_features: !new:speechbrain.lobes.features.Fbank
+  n_mels: 80
+
+mean_var_norm: !new:speechbrain.processing.features.InputNormalization
+  norm_type: sentence
+  std_norm: false
+
+embedding_model: &id001 !new:speechbrain.lobes.models.model.d_tdnn_local.ECAPA_TDNN
+  input_size: 80
+  channels: [1024, 1024, 1024, 1024, 3072]
+  kernel_sizes: [5, 3, 3, 3, 1]
+  dilations: [1, 2, 3, 4, 1]
+  attention_channels: 128
+  lin_neurons: 192
+
+mean_var_norm_emb: !new:speechbrain.processing.features.InputNormalization
+  norm_type: global
+  std_norm: false
+
+pretrainer: !new:speechbrain.utils.parameter_transfer.Pretrainer
+  collect_in: /home/qinyc/02_exp/exp12//save
+  loadables:
+    embedding_model: *id001
+  paths:
+    embedding_model: /home/qinyc/02_exp/exp04/save/CKPT+2021-08-23+08-26-47+00/embedding_model.ckpt

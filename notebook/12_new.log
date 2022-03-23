@@ -1,0 +1,87 @@
+/data0/qyc/vox1_2/rirs_noises.zip exists. Skipping download
+/data0/qyc/vox1_2/rirs_noises.zip exists. Skipping download
+/data0/qyc/vox1_2/rirs_noises.zip exists. Skipping download
+/home/qinyc/02_exp/exp12/save/veri_test2.txt exists. Skipping download
+speechbrain.core - Beginning experiment!
+speechbrain.core - Experiment folder: /home/qinyc/02_exp/exp12
+speechbrain.core - Info: ckpt_interval_minutes arg from hparam file is used
+speechbrain.core - 7.3M trainable parameters in SpeakerBrain
+speechbrain.utils.checkpoints - Would load a checkpoint here, but none found yet.
+speechbrain.utils.epoch_loop - Going into epoch 1
+100%|██████████| 64370/64370 [4:31:16<00:00,  3.95it/s, train_loss=5.93]
+100%|██████████| 7140/7140 [05:01<00:00, 23.68it/s]speechbrain.nnet.schedulers - Changing lr from 0.001 to 0.001
+speechbrain.utils.train_logger - epoch: 1, lr: 1.00e-03 - train loss: 5.93 - valid loss: 1.98, valid ErrorRate: 6.31e-02
+speechbrain.utils.checkpoints - Saved an end-of-epoch checkpoint in /home/qinyc/02_exp/exp12/save/CKPT+2022-03-15+01-51-18+00
+speechbrain.utils.checkpoints - Deleted checkpoint in /home/qinyc/02_exp/exp12/save/CKPT+2022-03-15+01-45-01+00
+speechbrain.utils.epoch_loop - Going into epoch 2
+
+100%|██████████| 64370/64370 [4:04:55<00:00,  4.38it/s, train_loss=2.42]
+100%|██████████| 7140/7140 [05:02<00:00, 23.59it/s]speechbrain.nnet.schedulers - Changing lr from 1e-08 to 2.6e-08
+speechbrain.utils.train_logger - epoch: 2, lr: 2.55e-08 - train loss: 2.42 - valid loss: 9.52e-01, valid ErrorRate: 2.84e-02
+speechbrain.utils.checkpoints - Saved an end-of-epoch checkpoint in /home/qinyc/02_exp/exp12/save/CKPT+2022-03-15+06-01-21+00
+speechbrain.utils.checkpoints - Deleted checkpoint in /home/qinyc/02_exp/exp12/save/CKPT+2022-03-15+01-51-18+00
+speechbrain.utils.checkpoints - Deleted checkpoint in /home/qinyc/02_exp/exp12/save/CKPT+2022-03-15+05-51-23+00
+speechbrain.utils.epoch_loop - Going into epoch 3
+
+100%|██████████| 64370/64370 [4:04:50<00:00,  4.38it/s, train_loss=2.08]
+100%|██████████| 7140/7140 [05:03<00:00, 23.54it/s]speechbrain.nnet.schedulers - Changing lr from 0.001 to 0.001
+speechbrain.utils.train_logger - epoch: 3, lr: 1.00e-03 - train loss: 2.08 - valid loss: 1.26, valid ErrorRate: 3.62e-02
+speechbrain.utils.checkpoints - Saved an end-of-epoch checkpoint in /home/qinyc/02_exp/exp12/save/CKPT+2022-03-15+10-11-19+00
+speechbrain.utils.checkpoints - Deleted checkpoint in /home/qinyc/02_exp/exp12/save/CKPT+2022-03-15+10-01-27+00
+speechbrain.utils.epoch_loop - Going into epoch 4
+
+100%|██████████| 64370/64370 [4:02:28<00:00,  4.42it/s, train_loss=1.91]
+100%|██████████| 7140/7140 [05:00<00:00, 23.75it/s]speechbrain.nnet.schedulers - Changing lr from 1e-08 to 2.6e-08
+speechbrain.utils.train_logger - epoch: 4, lr: 2.55e-08 - train loss: 1.91 - valid loss: 7.63e-01, valid ErrorRate: 2.35e-02
+speechbrain.utils.checkpoints - Saved an end-of-epoch checkpoint in /home/qinyc/02_exp/exp12/save/CKPT+2022-03-15+14-18-54+00
+speechbrain.utils.checkpoints - Deleted checkpoint in /home/qinyc/02_exp/exp12/save/CKPT+2022-03-15+14-11-26+00
+speechbrain.utils.checkpoints - Deleted checkpoint in /home/qinyc/02_exp/exp12/save/CKPT+2022-03-15+10-11-19+00
+speechbrain.utils.checkpoints - Deleted checkpoint in /home/qinyc/02_exp/exp12/save/CKPT+2022-03-15+06-01-21+00
+speechbrain.utils.epoch_loop - Going into epoch 5
+
+100%|██████████| 64370/64370 [4:02:27<00:00,  4.42it/s, train_loss=1.75]
+100%|██████████| 7140/7140 [05:00<00:00, 23.72it/s]speechbrain.nnet.schedulers - Changing lr from 0.001 to 0.001
+speechbrain.utils.train_logger - epoch: 5, lr: 1.00e-03 - train loss: 1.75 - valid loss: 1.07, valid ErrorRate: 3.08e-02
+speechbrain.utils.checkpoints - Saved an end-of-epoch checkpoint in /home/qinyc/02_exp/exp12/save/CKPT+2022-03-15+18-26-27+00
+speechbrain.utils.checkpoints - Deleted checkpoint in /home/qinyc/02_exp/exp12/save/CKPT+2022-03-15+18-19-01+00
+speechbrain.utils.epoch_loop - Going into epoch 6
+
+100%|██████████| 64370/64370 [4:04:12<00:00,  4.39it/s, train_loss=1.71]
+100%|██████████| 7140/7140 [04:59<00:00, 23.81it/s]speechbrain.nnet.schedulers - Changing lr from 1e-08 to 2.6e-08
+speechbrain.utils.train_logger - epoch: 6, lr: 2.55e-08 - train loss: 1.71 - valid loss: 6.78e-01, valid ErrorRate: 2.16e-02
+speechbrain.utils.checkpoints - Saved an end-of-epoch checkpoint in /home/qinyc/02_exp/exp12/save/CKPT+2022-03-15+22-35-44+00
+speechbrain.utils.checkpoints - Deleted checkpoint in /home/qinyc/02_exp/exp12/save/CKPT+2022-03-15+22-26-37+00
+speechbrain.utils.checkpoints - Deleted checkpoint in /home/qinyc/02_exp/exp12/save/CKPT+2022-03-15+14-18-54+00
+speechbrain.utils.checkpoints - Deleted checkpoint in /home/qinyc/02_exp/exp12/save/CKPT+2022-03-15+18-26-27+00
+speechbrain.utils.epoch_loop - Going into epoch 7
+
+100%|██████████| 64370/64370 [4:05:47<00:00,  4.36it/s, train_loss=1.59]
+100%|██████████| 7140/7140 [04:59<00:00, 23.88it/s]speechbrain.nnet.schedulers - Changing lr from 0.001 to 0.001
+speechbrain.utils.train_logger - epoch: 7, lr: 1.00e-03 - train loss: 1.59 - valid loss: 9.95e-01, valid ErrorRate: 2.86e-02
+speechbrain.utils.checkpoints - Saved an end-of-epoch checkpoint in /home/qinyc/02_exp/exp12/save/CKPT+2022-03-16+02-46-35+00
+speechbrain.utils.checkpoints - Deleted checkpoint in /home/qinyc/02_exp/exp12/save/CKPT+2022-03-16+02-35-53+00
+speechbrain.utils.epoch_loop - Going into epoch 8
+
+100%|██████████| 64370/64370 [4:06:09<00:00,  4.36it/s, train_loss=1.59]
+100%|██████████| 7140/7140 [05:00<00:00, 23.78it/s]speechbrain.nnet.schedulers - Changing lr from 1e-08 to 2.6e-08
+speechbrain.utils.train_logger - epoch: 8, lr: 2.55e-08 - train loss: 1.59 - valid loss: 6.27e-01, valid ErrorRate: 2.05e-02
+speechbrain.utils.checkpoints - Saved an end-of-epoch checkpoint in /home/qinyc/02_exp/exp12/save/CKPT+2022-03-16+06-57-50+00
+speechbrain.utils.checkpoints - Deleted checkpoint in /home/qinyc/02_exp/exp12/save/CKPT+2022-03-15+22-35-44+00
+speechbrain.utils.checkpoints - Deleted checkpoint in /home/qinyc/02_exp/exp12/save/CKPT+2022-03-16+02-46-35+00
+speechbrain.utils.checkpoints - Deleted checkpoint in /home/qinyc/02_exp/exp12/save/CKPT+2022-03-16+06-46-46+00
+speechbrain.utils.epoch_loop - Going into epoch 9
+
+100%|██████████| 64370/64370 [3:59:58<00:00,  4.47it/s, train_loss=1.5]
+100%|██████████| 7140/7140 [04:58<00:00, 23.88it/s]speechbrain.nnet.schedulers - Changing lr from 0.001 to 0.001
+speechbrain.utils.train_logger - epoch: 9, lr: 1.00e-03 - train loss: 1.50 - valid loss: 9.46e-01, valid ErrorRate: 2.75e-02
+speechbrain.utils.checkpoints - Saved an end-of-epoch checkpoint in /home/qinyc/02_exp/exp12/save/CKPT+2022-03-19+14-00-19+00
+speechbrain.utils.checkpoints - Deleted checkpoint in /home/qinyc/02_exp/exp12/save/CKPT+2022-03-19+13-40-20+00
+speechbrain.utils.epoch_loop - Going into epoch 10
+
+100%|██████████| 64370/64370 [4:02:40<00:00,  4.42it/s, train_loss=1.52]
+100%|██████████| 7140/7140 [04:59<00:00, 23.87it/s]speechbrain.nnet.schedulers - Changing lr from 1e-08 to 2.6e-08
+speechbrain.utils.train_logger - epoch: 10, lr: 2.55e-08 - train loss: 1.52 - valid loss: 5.94e-01, valid ErrorRate: 1.96e-02
+speechbrain.utils.checkpoints - Saved an end-of-epoch checkpoint in /home/qinyc/02_exp/exp12/save/CKPT+2022-03-19+18-08-03+00
+speechbrain.utils.checkpoints - Deleted checkpoint in /home/qinyc/02_exp/exp12/save/CKPT+2022-03-16+06-57-50+00
+speechbrain.utils.checkpoints - Deleted checkpoint in /home/qinyc/02_exp/exp12/save/CKPT+2022-03-19+18-00-24+00
+speechbrain.utils.checkpoints - Deleted checkpoint in /home/qinyc/02_exp/exp12/save/CKPT+2022-03-19+14-00-19+00

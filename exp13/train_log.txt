@@ -1,0 +1,10 @@
+epoch: 1, lr: 1.00e-03 - train loss: 5.74 - valid loss: 1.86, valid ErrorRate: 6.06e-02
+epoch: 2, lr: 2.55e-08 - train loss: 2.27 - valid loss: 8.52e-01, valid ErrorRate: 2.64e-02
+epoch: 3, lr: 1.00e-03 - train loss: 1.93 - valid loss: 1.18, valid ErrorRate: 3.51e-02
+epoch: 4, lr: 2.55e-08 - train loss: 1.78 - valid loss: 6.73e-01, valid ErrorRate: 2.18e-02
+epoch: 5, lr: 1.00e-03 - train loss: 1.62 - valid loss: 1.01, valid ErrorRate: 3.02e-02
+epoch: 6, lr: 2.55e-08 - train loss: 1.58 - valid loss: 5.93e-01, valid ErrorRate: 1.98e-02
+epoch: 7, lr: 1.00e-03 - train loss: 1.46 - valid loss: 9.45e-01, valid ErrorRate: 2.78e-02
+epoch: 8, lr: 2.55e-08 - train loss: 1.47 - valid loss: 5.48e-01, valid ErrorRate: 1.91e-02
+epoch: 9, lr: 1.00e-03 - train loss: 1.37 - valid loss: 8.83e-01, valid ErrorRate: 2.67e-02
+epoch: 10, lr: 2.55e-08 - train loss: 1.40 - valid loss: 5.14e-01, valid ErrorRate: 1.82e-02
